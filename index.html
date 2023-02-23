@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML</title>
+    <link rel="shortcut icon" href="imagens/iconmacaco.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/all.css" media="all">
+    <link rel="stylesheet" href="styles/style.css" media="screen">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    
+</head>
+<body onresize="sizechange()">
+    <header>
+        <h1>Primeiro teste com Html(aqui título de hierarquia 1)</h1>
+        <div  class="noprint">
+            <span id="menub" class=" material-symbols-outlined" onclick="changemenu()">menu</span>
+            <nav id="itens">
+                <UL>
+                    <LI><a href="#">home</a></LI>
+                    <li><a href="#">links</a></li>
+                    <li><a href="#">contato</a></li>
+                    <li><a href="#">tabela</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">exemplo de site</a></li>
+                </UL>
+            </nav>
+        </div>   
+    </header>
+    
+    <main>
+        <article>
+            
+            <h2>Primeiro parágrafo( aqui título de hierarquia 2)</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur labore facere ad, dolores quisquam aliquid quidem nihil laudantium in, voluptas quasi nam aliquam nobis eligendi eveniet iste illum veritatis rem?(Parágrafo)</p>
+            <h2>Inserindo imagem</h2>
+            <p>Aqui uma foto do Ronaldinho &#x1F649</p>
+            <img src="imagens/macaco.jpeg" alt="">
+            <p>Para adicionar uma imagem, trate ela adequando sua resolução, separe em uma pasta para manter a organização, use a tag &lt;img&gt;, em "src" aponte o caminho da imagem.</p>
+            <h2>Inserindo emojis</h2>
+            <p>Para adicionar emoji bastar pegar seu código decimal ou hexadecimal e colocar após "&#x"(para hexadecimal, sem aspas) ou "&#"(para decimal, sem aspas)</p>
+            <h2>Usando negrito e italico</h2>
+            <p>Para adicionar um texto em <strong>Negrito</strong> use a tag <b>&lt;strong&gt;</b> ou <b>&lt;b&gt;</b></p>
+            <p>para adicionar um texto em <em>Italico</em> use a tag <i>&lt;i&gt;</i> ou <i>&lt;em&gt;</i></em></p>
+            <h2>Criar marcação estilo marca texto no papel</h2>
+            <p>Basta usar a tag &lt;mark&gt;, <mark>assim o texto ficará marcado</mark>(<mark style="background-color: aqua;">é possivel mudar a cor da marcação usando css</mark>)</p>
+            <h2>Texto grande e pequeno</h2>
+            <p>Para criar um <big>texto grande</big> use css, a tag &lt;big&gt; está obsoleta e poderá ser removida</p>
+            <p>Para criar um t<small>exto pequeno</small> use a tag &lt;small&gt; </p>
+            <h2>Texto removido e adicionado(sublinhado)</h2>
+            <p>Para adicionar um <del>texto removido</del> use a tag &lt;del&gt;</p>
+            <p>Para um <ins>texto adicionado</ins> use a tag &lt;ins&gt;</p>
+            <h2>Texto subsrito e sobrescrito</h2>
+            <p>Para adicionar um texto subscrito, como H<sub>2</sub>O use a tag &lt;sub&gt;</p>
+            <p>Para um texto sobrescrito, como 10<sup>9</sup>x5, use a tag &lt;sup&gt;</p>
+            <h2>Fontes monoespaçadas para códigos e manter identação</h2>
+            <p>Para usar <code>fontes monoespaçadas</code> e tornar a leitura de códigos mais agradável use a tag &lt;code&gt;, poŕem isso não mantém a identação, para mante-la use a tag &lt;pre&gt;. Exemplo: </p>
+            <p><pre><code>
+            num = int(input('Digite um número: '))
+            if num %2 == 0:
+                parouimpar = 'Par'
+            else:
+                parouimpar = 'Impar'
+            print(f'O número digitado foi {num} e ele é {parouimpar}.')
+            </code></pre></p>
+            <h2>Citações simples</h2>
+            <p>Para criar <q>citações simples, sem quebra de linha</q> use a tag &lt;q&gt;</p>
+            <h2>Citações em bloco</h2>
+            <p>Para usar citaçõem em bloco use a tag &lt;blockquote&gt;, incluindo tambem o link da citação de possível, exemplo:</p>
+            <blockquote cite = "https://exemplo.link">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, sapiente. Quia labore minima repellendus eligendi nesciunt vitae dolorum nihil laudantium aliquid, fugiat, voluptate eos saepe unde incidunt quas! Rerum illum, earum amet hic exercitationem quisquam. Earum maiores error quia est voluptatum numquam dolorum sit magni neque, veniam placeat rem. Eius perferendis quibusdam quia, a obcaecati necessitatibus error odit fugiat corrupti laudantium. Corporis ab dolores eos delectus vel atque, nulla odio! Ipsum illum et, possimus enim officia culpa, veniam ratione laboriosam fugit repellat sint labore commodi, laborum eum blanditiis pariatur repellendus corporis quaerat. Rem laudantium vel, neque expedita distinctio velit mollitia. </blockquote>
+            <h2>Abreviação</h2>
+            <p>Para escrever uma abreviação use a tag <abbr title="abreviação">&lt;abbr&gt;</abbr>. Ela irá destacar o texto e ao passar o mouse em cima irá mostrar seu signifiado, como em <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+            <h2>Listas</h2>
+            <p>Para adicionar listar se usa as tags &lt;ul&gt; para listas nao ordenadas e &lt;ol&gt; para listas ordenadas</p>
+            <h3>listas ordenadas</h3>
+            <p>Meu dia</p>
+            <div class="lista">
+                <ol>
+                    <li>acordar</li>
+                    <li>Me arrumar</li>
+                    <li>Ir trabalhar</li>
+                    <li>almoçar</li>
+                    <li>Voltar ao trabalho</li>
+                    <li>Ir embora</li>
+                    <li>Estudar</li>
+                    <li>Jogar</li>
+                </ol>
+            </div>
+            <h3>Listas não ordenadas</h3>
+            <p>Lista de compras</p>
+            <div class="lista">
+                <ul>
+                    <li>Pão</li>
+                    <li>Leite</li>
+                    <li>Doces</li>
+                    <li>Suco</li>
+                    <li>Arroz</li>
+                </ul>
+            </div>
+            <h3>Listas Mistas</h3>
+            <p>Você pode aninhar listas ordenadas e não ordenadas</p>
+            <h4>Jogos favoritos</h4>
+            <div class="lista">
+                <ol>
+                    <li>Ps1</li>
+                    <ul>
+                        <li>Klonoa</li>
+                        <li>Crash</li>
+                        <li>Spider-man</li>
+                    </ul>
+                    <li>Ps2</li>
+                    <ul>
+                        <li>Kingdom Hearts</li>
+                        <li>Mortal Kombat Armaggedom</li>
+                        <li>GTA SA</li>
+                    </ul>
+                    <li>X360</li>
+                    <ul>
+                        <li>Alien Isolation</li>
+                        <li>Skyrim</li>
+                        <li>Far Cry 3</li>
+                    </ul>
+                    <li>XONE</li>
+                    <ul>
+                        <li>The Witcher 3</li>
+                        <li>Red Dead Redemptiom 2</li>
+                        <li>Mad Max</li>
+                    </ul>
+                </ol>
+            </div>
+            <h3>Listas de definição</h3>
+            <p>Para criar uma lista de definição use a tag &lt;dl&gt. Dentro dessa tag use as tags de &lt;dt&gt;(termo) e &lt;dd&gt;(descrição)
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem responsável pelo conteúdo de um site</dd>
+                    <dt>CSS</dt>
+                    <dd>linguagem responsável pelo estilo de um site</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem responsável pelas interações de um site</dd>
+                </dl>
+            <h1>Usando links</h1>
+            <p>Para usar links use a tag &lt;a&gt;(ancoragem)
+            </p>
+            <h2>Usando links externos</h2>
+            <p>Para usar links externos  além da tag &lt;a&gt;, use os parametros "target="_blank""" e "rel="external"". Atenção: caso queira que o google não vincule o link a seu ranking no sistema de buscas use o parametro "rel="nofollow"" </p>
+            <p><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Github do Curso em Vídeo</a></p>
+            <h2>Usando links internos</h2>
+            <p>Para usar links internos usa-se o parametro "rel="next""" para próxima página e "rel= "prev"" para página anterior. O parametro "target="_self"" é opcional.</p>
+            <p><a href="pages/page002.html" rel="next">Segunda página</a></p>
+            <h1>Downloads</h1>
+            <p>Para usar downloads no seu site</p>
+            <ul>
+                <li><a href="download/gatog.jpg" download="gatinho.jpg">Baixar o Arquivo</a></li>
+            </ul>
+            <h2>Usando imagens dinamicas</h2>
+            <p>Para usar imagens dinamicas use a tag &lt;picture&gt;. Dentro dessa tag use a tag &lt;source:media:types&gt; em ordem, da menor para a maior imagem. Use o parametro medi="(max-width>: ___px )" para indicar o tamanho minimo para a imagem mudar</p>
+            <picture>
+                <source media="(max-width: 750px )" srcset="imagens/gatop.jpg" type="image/jpg">
+                <source media="(max-width:1320px )" srcset="imagens/gatom.jpg" type="image/jpg">
+                <img src="imagens/gatog.jpg" alt="gato">
+            </picture>
+            <h2>Videos externos </h2>
+            <div class="video"><iframe  width="560" height="315" src="https://www.youtube.com/embed/EAjQNcH9ug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <h2>Primeiros passos CSS</h2>
+            <p><a href="pages/page002.html">Clique aqui para ir para a página 2</a> onde irei treinar css</p>
+            <h2>Exemplo de site</h2>
+            <p><a href="pages/page_example.html">Clique aqui para ir para o exemplo de site</a> usando todos esses ensinamentos</p>
+            <h2>Tabelas</h2>
+            <p><a href="pages/tabela.html">Exemplo de tabela</a></p>
+            <h3>Tabelas  responsivas</h3>
+            <p>Para tabelas responsivas coloque tudo numa divisão com o parametro 'overflow'(x ou y) em 'auto'</p>
+            <h2>Formularios</h2>
+            <p>Para formularios use a tag &lt;form&gt;. Seus campos devem ser divididos em divs, com labels e um botão de submeter</p>
+            <form action="enviei()" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required minlength="4" maxlength="10" placeholder="username">
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required minlength="6" placeholder="password" >
+                </div>
+                <div class="button">
+                    <input type="submit" value="Enviar" >
+                </div>
+                <div id="formulario">
+                    <p></p>
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer class="noprint">
+        <p><a href="#">Luisinho</a></p>
+    </footer>
+    <script>
+        function changemenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        
+
+        }
+        function sizechange(){
+            if (window.innerWidth>=768){
+                itens.style.display = 'block'
+
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

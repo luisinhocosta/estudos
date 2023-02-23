@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoles mais vendidos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-variant: small-caps;
+            font-size: 3em;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            text-align: center;
+
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+        }
+        th{
+            background-color: rgb(209, 207, 207);
+        }
+        .nintendo{
+            background-color: rgba(248, 39, 2, 0.829);
+            color: white;
+        }
+        .sony{
+            background-color: rgb(0, 60, 255);
+            color: white;
+        }
+        .microsoft{
+            background-color: green;
+        }
+        .sega{
+            background-color: rgb(0, 204, 255);
+        }
+        .atari{
+            background-color: rgb(0, 0, 0);
+            color: red;
+        }
+        
+           
+        .fonte{
+            margin: 60px 0px 60px 05px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(47, 48, 32);
+            padding-left: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: rgb(109, 109, 7);
+            font-size: 1.1em;
+            transition: .2s;
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Top 25 consoles mais vendidos</h1>
+        <div id="tabela">
+            <table>
+                <thead>
+                    <th>Console</th>
+                    <th>Unidades Vendidas</th>
+                    <th>Empresa</th>
+                    <th>Lançamento</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PlayStation 2</td>
+                        <td>155,1 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo DS</td>
+                        <td>154,02 milhões	</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Switch</td>
+                        <td>122,55 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Game Boy</td>
+                        <td>118,69 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>1989</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 4 </td>
+                        <td>117,2 milhões	</td>
+                        <td class="sony">Sony</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation</td>
+                        <td>102,49 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>1994</td>
+                    </tr>
+                    <tr>
+                        <td>Wii</td>
+                        <td>101,63 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 3</td>
+                        <td>87,4 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox 360</td>
+                        <td>84 milhões</td>
+                        <td class="microsoft">Microsoft</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>Game Boy Advance</td>
+                        <td>81,51 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation Portable</td>
+                        <td>80–82 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo 3DS</td>
+                        <td>75,94 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Entertainment System</td>
+                        <td>61,91 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>1983</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox One</td>
+                        <td>51 milhões</td>
+                        <td class="microsoft">Microsoft</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>Super Nintendo Entertainment System</td>
+                        <td>49,1 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>1990</td>
+                    </tr>
+                    <tr>
+                        <td>Mega Drive</td>
+                        <td>35 milhões</td>
+                        <td class="sega">Sega</td>
+                        <td>1988</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo 64</td>
+                        <td>32,93 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td>Atari 2600</td>
+                        <td>30 milhões</td>
+                        <td class="atari">Atari</td>
+                        <td>1977</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 5</td>
+                        <td>30 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox</td>
+                        <td>24 milhões</td>
+                        <td class="microsoft">Microsoft</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>GameCube</td>
+                        <td>21,74 milhões</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Wii U</td>
+                        <td>13,56 milhões</td>
+                        <td class="nintendo ">Nintendo</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox Series X/S</td>
+                        <td>12 milhões</td>
+                        <td class="microsoft">Microsoft</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Sega Game Gear</td>
+                        <td>10,62 milhões	</td>
+                        <td class="sega">Sega</td>
+                        <td>1990</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation Vita</td>
+                        <td>10–15 milhões</td>
+                        <td class="sony">Sony</td>
+                        <td>2011</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Top 3 empresas no ranking</th>
+                        <td class="sony">Sony</td>
+                        <td class="nintendo">Nintendo</td>
+                        <td class="microsoft">Microsoft</td>
+                    </tr>
+                    <tr>
+                        <th>Total de consoles no top</th>
+                        <td>7</td>
+                        <td>12</td>
+                        <td>4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p class="fonte">Fonte: <a href="https://pt.wikipedia.org/wiki/Lista_de_consoles_de_jogos_eletr%C3%B4nicos_mais_vendidos" target="_blank" rel="external">Wikipédia</a></p>
+    
+    </main>
+</body>
+</html>

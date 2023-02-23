@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header>h1{
+    padding-top: 60PX;
+    text-align: center;
+    
+}
+main{
+    margin: auto;
+    max-width: 900px;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 30px;
+}
+h1{
+    font-size: 3em;
+    padding: 15px 0px;
+    line-height: 1em;
+   
+}
+h2{
+    padding: 10px 0px;
+}
+h3{
+    padding: 10px 0px;
+}
+.lista{
+    padding-left: 50px;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+    max-width: 900px;
+}
+div.video{
+    
+    margin: 0px -20px 30px -20px;
+    padding: -10px;
+    padding-bottom: 56%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}

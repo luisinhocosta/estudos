@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: linear-gradient( to bottom, #6ED2FA, #24ABE0, #159E83);
+    background-attachment: fixed;
+}
+p{
+    text-align: justify;
+}
+
+main{
+    background-color: white;
+    width: 1200px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
+}
+
+h1{
+    color:#00aeff ;
+    text-align: center;
+    text-shadow: 1px 1px 2px #00aeff;
+}
+h2{
+    color: #12b191;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+h2.titulo_class{
+    background-color: #00aeff;
+    color: white;
+}
+p.botao{
+    background-color: red;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    color: yellow;
+}
+.botao:hover{
+    background-color: green;
+    color: black;
+}
+a{
+    color: darkblue;
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a::after{
+    content: '[link]';
+    color: darkgray;
+}
