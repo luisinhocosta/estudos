@@ -23,9 +23,11 @@
                     <LI><a href="#">home</a></LI>
                     <li><a href="#">links</a></li>
                     <li><a href="#">contato</a></li>
-                    <li><a href="#">tabela</a></li>
-                    <li><a href="#">css</a></li>
-                    <li><a href="#">exemplo de site</a></li>
+                    <li><a href="pages/tabela.html">tabela</a></li>
+                    <li><a href="styles/all.css">css</a></li>
+                    <li><a href="pages/page_example.html">exemplo de site</a></li>
+                    <li><a href="pages/login.html">login</a></li>
+                    <li><a href="pages/cadastro.html">cadastro</a></li>
                 </UL>
             </nav>
         </div>   
@@ -37,7 +39,7 @@
             <h2>Primeiro parágrafo( aqui título de hierarquia 2)</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur labore facere ad, dolores quisquam aliquid quidem nihil laudantium in, voluptas quasi nam aliquam nobis eligendi eveniet iste illum veritatis rem?(Parágrafo)</p>
             <h2>Inserindo imagem</h2>
-            <p>Aqui uma imagem &#x1F649</p>
+            <p>Exemplo de imagem &#x1F649</p>
             <img src="imagens/macaco.jpeg" alt="">
             <p>Para adicionar uma imagem, trate ela adequando sua resolução, separe em uma pasta para manter a organização, use a tag &lt;img&gt;, em "src" aponte o caminho da imagem.</p>
             <h2>Inserindo emojis</h2>
@@ -50,7 +52,7 @@
             <h2>Texto grande e pequeno</h2>
             <p>Para criar um <big>texto grande</big> use css, a tag &lt;big&gt; está obsoleta e poderá ser removida</p>
             <p>Para criar um t<small>exto pequeno</small> use a tag &lt;small&gt; </p>
-            <h2>Texto removido e adicionado(sublinhado)</h2>
+            <h2>Texto removido e adicionado (sublinhado) </h2>
             <p>Para adicionar um <del>texto removido</del> use a tag &lt;del&gt;</p>
             <p>Para um <ins>texto adicionado</ins> use a tag &lt;ins&gt;</p>
             <h2>Texto subsrito e sobrescrito</h2>
@@ -58,14 +60,16 @@
             <p>Para um texto sobrescrito, como 10<sup>9</sup>x5, use a tag &lt;sup&gt;</p>
             <h2>Fontes monoespaçadas para códigos e manter identação</h2>
             <p>Para usar <code>fontes monoespaçadas</code> e tornar a leitura de códigos mais agradável use a tag &lt;code&gt;, poŕem isso não mantém a identação, para mante-la use a tag &lt;pre&gt;. Exemplo: </p>
+            <div class="codigo">
             <p><pre><code>
             num = int(input('Digite um número: '))
             if num %2 == 0:
                 parouimpar = 'Par'
             else:
                 parouimpar = 'Impar'
-            print(f'O número digitado foi {num} e ele é {parouimpar}.')
+            print(f'O número digitado é {parouimpar}')
             </code></pre></p>
+            </div>
             <h2>Citações simples</h2>
             <p>Para criar <q>citações simples, sem quebra de linha</q> use a tag &lt;q&gt;</p>
             <h2>Citações em bloco</h2>
@@ -177,7 +181,7 @@
             <form action="enviei()" method="post">
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" required minlength="4" maxlength="10" placeholder="username">
+                    <input class="entrada" type="text" name="nome" id="nome" required minlength="4" maxlength="10" placeholder="username">
                 </div>
                 <div>
                     <label for="senha">Senha:</label>
@@ -190,6 +194,8 @@
                     <p></p>
                 </div>
             </form>
+            <h2>Tela de login responsiva</h2>
+            <p><a href="pages/login.html">Tela de login</a> responsiva usando os conceitos de Mobile First e media query</p>
         </article>
     </main>
     <footer class="noprint">

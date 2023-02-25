@@ -1,4 +1,9 @@
 @media screen and (min-width: 768px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    
     #menub{
         display: none;
     }
@@ -8,4 +13,8 @@
     nav li{
         display: inline-block;
     }
-}
+    
+    main{
+        max-width: 800px;}
+    }
+    

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login responsivo</title>
+    <link rel="stylesheet" href="../styles/stylecadastro.css">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="imagem"></div>
+            <form class="formulario" action="login.php" method="post">
+                <p class="title">Criar conta</p>
+                <p>Crie uma conta para aproveitar nossos serviços.</p>
+                <div class="inlinediv"> 
+                    <label class="lbl" for="nome">Usuário :</label>
+                    <input type="text" name="nome" id="nome" autocomplete="username" minlength="4" placeholder="username" required >
+                    
+                </div>
+                <div class="inlinediv">
+                    <div class="lbl"><label for="pass">Senha :</label></div>
+                    <input type="password" name="pass" id="pass" minlength="6" placeholder="password" required autocomplete="current-password">
+                
+                </div>
+                <div class="inlinediv">
+                    <label class="lbl" for="email">E-mail :</label>
+                    <input type="email" name="email" id="email" placeholder="____@__.com" required autocomplete="email">
+                </div>
+                <div class="inlinediv">
+                    <label class="lbl" for="nation">País :</label>
+                    <input type="text" name="nation" id="nation" required autocomplete="country" placeholder="nacionalidade" >
+
+                </div>
+                <div class="inlinediv">
+                    <label class="lbl" for="gender">Sexo</label>
+                    <select class="selected" name="gender" id="gender" required autocomplete="sex">
+                        <option  value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+                </div>
+                <div >
+                    <input class="botao" type="submit" value="Login">
+                    
+                </div>
+            </form>
+            
+        </div>
+        
+    </main>
+    
+</body>
+</html>

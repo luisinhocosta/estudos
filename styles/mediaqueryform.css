@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width: 995px) {
+    body{
+        background-image: linear-gradient(to bottom , rgb(151, 2, 197), rgb(4, 194, 184));
+    }
+    .login{
+        width: 80vw;
+        
+    }
+    .imagem{
+        float: left;
+        width: 35%;
+        height: 110%;
+        
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.568);
+        height: 2.3em;
+        
+        
+    }
+    .formulario{
+        float: right;
+        width: 65%;
+        padding-top: 110px;
+    }
+    .botao{
+        margin-top: 30px;
+    }
+    .context{
+        float: right;
+        width: 65%;
+        padding-top: 30px;
+    }
+}
+@media screen and (min-width: 996px) {
+    body{
+        background-image: linear-gradient(to bottom , rgb(108, 1, 141), rgb(0, 255, 242));
+    }
+    .login{
+        width: 950px;
+    }
+    .imagem{
+        float: right;
+        width: 50%;
+        height: 110%;
+        
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.568);
+        height: 2.4em;
+        
+        
+    }
+    .formulario{
+        float: left;
+        width: 50%;
+        padding-top: 120px;
+        
+    }
+    .botao{
+        margin-top: 40px;
+    }
+    .context{
+        float: left;
+        width: 50%;
+        padding-top: 40px;
+    }
+} 

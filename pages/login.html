@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login responsivo</title>
+    <link rel="stylesheet" href="../styles/styleform.css">
+    <link rel="stylesheet" href="../styles/mediaqueryform.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="imagem"></div>
+            <form class="formulario" action="login.php" method="post">
+                <p class="title">Login</p>
+                <p>Faça login para aproveitar nossos serviços.</p>
+                <div class="inlinediv"> 
+                    <label class="lbl" for="nome">Usuário :</label>
+                    <input type="text" name="nome" id="nome" autocomplete="username" minlength="4" placeholder="username" required >
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+                <div class="inlinediv">
+                    <div class="lbl"><label for="pass">Senha :</label></div>
+                    <input type="password" name="pass" id="pass" minlength="6" placeholder="password" required autocomplete="current-password">
+                    <span class="material-symbols-outlined">lock</span>
+                </div>
+                <div >
+                    <input class="botao" type="submit" value="Login">
+                    
+                </div>
+            </form>
+            
+            <div class="context">
+                <p>Esqueceu a senha?<a href="../index.html"> Redefini-la</a> <br>
+                Não tem um login? <a href="cadastro.html">Cadastre-se</a></p></div>
+        
+        
+            
+        </div>
+    </main>
+    
+</body>
+</html>

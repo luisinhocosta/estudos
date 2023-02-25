@@ -1,0 +1,190 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    
+    background-image: linear-gradient(to bottom , rgb(180, 2, 235), rgb(1, 107, 102));
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    
+    
+    
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.login{
+    text-align: center;
+    padding: 10px 0px;
+    overflow: hidden;
+    line-height: 1.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.568);
+    height: 600px;
+    width: 322px;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    padding: 20px;
+    transition: width .3s , hight .3s;
+    transition-timing-function: ease;
+}
+.title{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 15px ;
+}
+
+input, select{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    height: 2em;
+    margin-bottom: 5px;
+    background-color: rgba(108, 1, 141, 0.288);
+    width: 190px;
+    color: white;
+    
+}
+input:focus-within{
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+}
+::placeholder{
+    padding-left: 13px;
+    color: white;
+}
+input:focus-within::placeholder{
+    color: black;
+}
+
+
+.imagem{
+    background: url(../imagens/keyboard-g616add684_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    margin: -20px -20px 15px -20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+.lbl{
+    display: inline-block;
+    width: 70px;
+}
+.inlinediv{
+    display: inline-block;
+    
+}
+span{
+    
+    
+    transform: translateY(5px);
+    
+}
+.botao {
+	background: rgba(1, 107, 102, 0.767);
+	color: white;
+	border: none;
+	height: 50px;
+	width: 270px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+.context{
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgba(108, 1, 141, 0.877);
+}
+a:hover{
+    text-decoration: underline;
+    color:rgba(11, 88, 85, 0.945) ;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 995px) {
+    body{
+        background-image: linear-gradient(to bottom , rgb(151, 2, 197), rgb(4, 194, 184));
+    }
+    .login{
+        width: 80vw;
+        
+    }
+    .imagem{
+        float: left;
+        width: 35%;
+        height: 110%;
+        
+    }
+    input,select{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.568);
+        height: 2.3em;
+        width: 210px;
+        
+        
+    }
+    .formulario{
+        float: right;
+        width: 65%;
+        padding-top: 110px;
+    }
+    .botao{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .context{
+        float: right;
+        width: 65%;
+        padding-top: 30px;
+    }
+}
+@media screen and (min-width: 996px) {
+    body{
+        background-image: linear-gradient(to bottom , rgb(108, 1, 141), rgb(0, 255, 242));
+    }
+    .login{
+        width: 950px;
+    }
+    .imagem{
+        float: right;
+        width: 50%;
+        height: 110%;
+        
+    }
+    input, select{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.568);
+        height: 2.4em;
+        width: 300px;
+        
+    }
+    .formulario{
+        float: left;
+        width: 50%;
+        padding-top: 120px;
+        
+    }
+    .botao{
+        margin-top: 40px;
+        width: 90%;
+    }
+    .context{
+        float: left;
+        width: 50%;
+        padding-top: 40px;
+    }
+} 
