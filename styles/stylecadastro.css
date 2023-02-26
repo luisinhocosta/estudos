@@ -29,26 +29,28 @@ main{
     top: 50%;
     left: 50%;
     background-color: rgba(255, 255, 255, 0.568);
-    height: 600px;
+    height: 500px;
     width: 322px;
     transform: translate(-50%,-50%);
     border-radius: 8px;
     padding: 20px;
     transition: width .3s , hight .3s;
     transition-timing-function: ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
 }
 .title{
     font-size: 2em;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 p{
-    margin-bottom: 15px ;
+    margin-bottom: 0px ;
+    
 }
 
 input, select{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.568);
-    height: 2em;
+    height: 1.7em;
     margin-bottom: 5px;
     background-color: rgba(108, 1, 141, 0.288);
     width: 190px;
@@ -72,7 +74,7 @@ input:focus-within::placeholder{
     background: url(../imagens/keyboard-g616add684_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 200px;
+    height: 150px;
     margin: -20px -20px 15px -20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
@@ -99,12 +101,10 @@ span{
 	font: bold15px arial,sans-serif;
 	text-shadow: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
-.context{
-    padding-top: 20px;
-}
+
 a{
     text-decoration: none;
     color: rgba(108, 1, 141, 0.877);
@@ -125,15 +125,16 @@ a:hover{
     }
     .imagem{
         float: left;
-        width: 35%;
+        width: 40%;
         height: 110%;
+        border-right: 1px solid rgba(0, 0, 0, 0.603);
         
     }
     input,select{
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.568);
         height: 2.3em;
-        width: 210px;
+        width: 230px;
         
         
     }
@@ -145,12 +146,9 @@ a:hover{
     .botao{
         margin-top: 30px;
         width: 80%;
+        transform: translateX(14px);
     }
-    .context{
-        float: right;
-        width: 65%;
-        padding-top: 30px;
-    }
+    
 }
 @media screen and (min-width: 996px) {
     body{
@@ -161,15 +159,16 @@ a:hover{
     }
     .imagem{
         float: right;
-        width: 50%;
+        width: 52%;
         height: 110%;
+        border-left: 1px solid rgba(0, 0, 0, 0.603);
         
     }
     input, select{
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.568);
         height: 2.4em;
-        width: 300px;
+        width: 310px;
         
     }
     .formulario{
@@ -181,6 +180,7 @@ a:hover{
     .botao{
         margin-top: 40px;
         width: 90%;
+        transform: translateX(-10px);
     }
     .context{
         float: left;

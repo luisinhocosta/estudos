@@ -10,16 +10,21 @@
     }
     .imagem{
         float: left;
-        width: 35%;
+        width: 40%;
         height: 110%;
+        border-right: 1px solid rgba(0, 0, 0, 0.459);
         
     }
     input{
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.568);
         height: 2.3em;
-        
-        
+    }
+    .title{
+        padding-bottom: 5px;
+    }
+    .inlinediv{
+        padding-top: 5px;
     }
     .formulario{
         float: right;
@@ -46,7 +51,14 @@
         float: right;
         width: 50%;
         height: 110%;
+        border-left: 1px solid rgba(0, 0, 0, 0.459);
         
+    }
+    .title{
+        padding-bottom: 5px;
+    }
+    .inlinediv{
+        padding-top: 5px;
     }
     input{
         border-radius: 5px;

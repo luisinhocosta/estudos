@@ -9,7 +9,7 @@ header>h1{
 }
 main{
     margin: auto;
-    max-width: 900px;
+    max-width: 800px;
     line-height: 2em;
     text-align: justify;
     text-indent: 30px;
@@ -33,7 +33,7 @@ img{
     display: block;
     margin: auto;
     padding: 20px 0px;
-    max-width: 900px;
+    max-width: 80%;
 }
 div.video{
     

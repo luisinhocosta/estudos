@@ -29,27 +29,25 @@ main{
     top: 50%;
     left: 50%;
     background-color: rgba(255, 255, 255, 0.568);
-    height: 580px;
+    height: 500px;
     width: 322px;
     transform: translate(-50%,-50%);
     border-radius: 8px;
     padding: 20px;
     transition: width .3s , hight .3s;
     transition-timing-function: ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
 }
 .title{
     font-size: 2em;
-    margin-bottom: 15px;
-}
-p{
-    margin-bottom: 15px ;
+    margin:-10px 0px 0px 0px;
 }
 
 input{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.568);
-    height: 2em;
-    margin-bottom: 5px;
+    height: 1.4em;
+    
     background-color: rgba(108, 1, 141, 0.288);
     
 }
@@ -69,7 +67,7 @@ input:focus-within::placeholder{
     background: url(../imagens/keyboard-g616add684_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 200px;
+    height: 170px;
     margin: -20px -20px 15px -20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
