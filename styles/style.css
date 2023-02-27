@@ -80,7 +80,8 @@ footer{
 .bc{
     background-color: rgba(0, 132, 255, 0.548);
     position: relative;
-    width: 80%;
+    width: 90%;
+    max-width: 500px;
     height: 250px;
     margin: auto;
     border-radius: 10px;
@@ -89,6 +90,6 @@ footer{
 .codigo{
     position: absolute;
     transform: translateY(-1000px);
-    
-    transform: translateX(-70px);
+    width: 50%;
+    transform: translateX(-85px);
 }

@@ -29,7 +29,7 @@ main{
     top: 50%;
     left: 50%;
     background-color: rgba(255, 255, 255, 0.568);
-    height: 500px;
+    height: 550px;
     width: 322px;
     transform: translate(-50%,-50%);
     border-radius: 8px;
@@ -67,7 +67,7 @@ input:focus-within::placeholder{
     background: url(../imagens/keyboard-g616add684_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 170px;
+    height: 120px;
     margin: -20px -20px 15px -20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
