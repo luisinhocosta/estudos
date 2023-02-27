@@ -47,7 +47,7 @@ input{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.568);
     height: 1.4em;
-    
+    width: 45%;
     background-color: rgba(108, 1, 141, 0.288);
     
 }
@@ -67,7 +67,7 @@ input:focus-within::placeholder{
     background: url(../imagens/keyboard-g616add684_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120px;
+    height: 140px;
     margin: -20px -20px 15px -20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
