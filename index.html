@@ -14,9 +14,9 @@
     
 </head>
 <body onresize="sizechange()">
-    <header>
-        <h1>Primeiro teste com Html(aqui título de hierarquia 1)</h1>
-        <div  class="noprint">
+    <div class="flex">
+        <header>
+            <h1>Primeiro teste com Html(aqui título de hierarquia 1)</h1>
             <span id="menub" class=" material-symbols-outlined" onclick="changemenu()">menu</span>
             <nav id="itens">
                 <UL>
@@ -30,8 +30,8 @@
                     <li><a href="pages/cadastro.html">cadastro</a></li>
                 </UL>
             </nav>
-        </div>   
-    </header>
+        </header>
+    </div>
     
     <main>
         <article>
@@ -146,76 +146,77 @@
                     <dt>JavaScript</dt>
                     <dd>Linguagem responsável pelas interações de um site</dd>
                 </dl>
-            <h1>Usando links</h1>
-            <p>Para usar links use a tag &lt;a&gt;(ancoragem)
-            </p>
-            <h2>Usando links externos</h2>
-            <p>Para usar links externos  além da tag &lt;a&gt;, use os parametros "target="_blank""" e "rel="external"". Atenção: caso queira que o google não vincule o link a seu ranking no sistema de buscas use o parametro "rel="nofollow"" </p>
-            <p><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Github do Curso em Vídeo</a></p>
-            <h2>Usando links internos</h2>
-            <p>Para usar links internos usa-se o parametro "rel="next""" para próxima página e "rel= "prev"" para página anterior. O parametro "target="_self"" é opcional.</p>
-            <p><a href="pages/page002.html" rel="next">Segunda página</a></p>
-            <h1>Downloads</h1>
-            <p>Para usar downloads no seu site</p>
-            <ul>
-                <li><a href="download/gatog.jpg" download="gatinho.jpg">Baixar o Arquivo</a></li>
-            </ul>
-            <h2>Usando imagens dinamicas</h2>
-            <p>Para usar imagens dinamicas use a tag &lt;picture&gt;. Dentro dessa tag use a tag &lt;source:media:types&gt; em ordem, da menor para a maior imagem. Use o parametro medi="(max-width>: ___px )" para indicar o tamanho minimo para a imagem mudar</p>
-            <picture>
-                <source media="(max-width: 750px )" srcset="imagens/gatop.jpg" type="image/jpg">
-                <source media="(max-width:1320px )" srcset="imagens/gatom.jpg" type="image/jpg">
-                <img src="imagens/gatog.jpg" alt="gato">
-            </picture>
-            <h2>Videos externos </h2>
-            <div class="video"><iframe  width="560" height="315" src="https://www.youtube.com/embed/EAjQNcH9ug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-            <h2>Primeiros passos CSS</h2>
-            <p><a href="pages/page002.html">Clique aqui para ir para a página 2</a> onde irei treinar css</p>
-            <h2>Exemplo de site</h2>
-            <p><a href="pages/page_example.html">Clique aqui para ir para o exemplo de site</a> usando todos esses ensinamentos</p>
-            <h2>Tabelas</h2>
-            <p><a href="pages/tabela.html">Exemplo de tabela</a></p>
-            <h3>Tabelas  responsivas</h3>
-            <p>Para tabelas responsivas coloque tudo numa divisão com o parametro 'overflow'(x ou y) em 'auto'</p>
-            <h2>Formularios</h2>
-            <p>Para formularios use a tag &lt;form&gt;. Seus campos devem ser divididos em divs, com labels e um botão de submeter</p>
-            <form action="enviei()" method="post">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input class="entrada" type="text" name="nome" id="nome" required minlength="4" maxlength="10" placeholder="username">
-                </div>
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" required minlength="6" placeholder="password" >
-                </div>
-                <div class="button">
-                    <input type="submit" value="Enviar" >
-                </div>
-                <div id="formulario">
-                    <p></p>
-                </div>
-            </form>
-            <h2>Tela de login responsiva</h2>
-            <p><a href="pages/login.html">Tela de login</a> responsiva usando os conceitos de Mobile First e media query</p>
-        </article>
-    </main>
-    <footer class="noprint">
-        <p><a href="#">Luisinho</a></p>
-    </footer>
+            <div class="noprint">
+                <h1>Usando links</h1>
+                <p>Para usar links use a tag &lt;a&gt;(ancoragem)
+                </p>
+                <h2>Usando links externos</h2>
+                <p>Para usar links externos  além da tag &lt;a&gt;, use os parametros "target="_blank""" e "rel="external"". Atenção: caso queira que o google não vincule o link a seu ranking no sistema de buscas use o parametro "rel="nofollow"" </p>
+                <p><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Github do Curso em Vídeo</a></p>
+                <h2>Usando links internos</h2>
+                <p>Para usar links internos usa-se o parametro "rel="next""" para próxima página e "rel= "prev"" para página anterior. O parametro "target="_self"" é opcional.</p>
+                <p><a href="pages/page002.html" rel="next">Segunda página</a></p>
+                <h1>Downloads</h1>
+                <p>Para usar downloads no seu site</p>
+                <ul>
+                    <li><a href="download/gatog.jpg" download="gatinho.jpg">Baixar o Arquivo</a></li>
+                </ul>
+                <h2>Usando imagens dinamicas</h2>
+                <p>Para usar imagens dinamicas use a tag &lt;picture&gt;. Dentro dessa tag use a tag &lt;source:media:types&gt; em ordem, da menor para a maior imagem. Use o parametro medi="(max-width>: ___px )" para indicar o tamanho minimo para a imagem mudar</p>
+                <picture>
+                    <source media="(max-width: 750px )" srcset="imagens/gatop.jpg" type="image/jpg">
+                    <source media="(max-width:1320px )" srcset="imagens/gatom.jpg" type="image/jpg">
+                    <img src="imagens/gatog.jpg" alt="gato">
+                </picture>
+                <h2>Videos externos </h2>
+                <div class="video"><iframe  width="560" height="315" src="https://www.youtube.com/embed/EAjQNcH9ug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <h2>Primeiros passos CSS</h2>
+                <p><a href="pages/page002.html">Clique aqui para ir para a página 2</a> onde irei treinar css</p>
+                <h2>Exemplo de site</h2>
+                <p><a href="pages/page_example.html">Clique aqui para ir para o exemplo de site</a> usando todos esses ensinamentos</p>
+                <h2>Tabelas</h2>
+                <p><a href="pages/tabela.html">Exemplo de tabela</a></p>
+                <h3>Tabelas  responsivas</h3>
+                <p>Para tabelas responsivas coloque tudo numa divisão com o parametro 'overflow'(x ou y) em 'auto'</p>
+                <h2>Formularios</h2>
+                <p>Para formularios use a tag &lt;form&gt;. Seus campos devem ser divididos em divs, com labels e um botão de submeter</p>
+                <form action="enviei()" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input class="entrada" type="text" name="nome" id="nome" required minlength="4" maxlength="10" placeholder="username">
+                    </div>
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" required minlength="6" placeholder="password" >
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar" >
+                    </div>
+                    <div id="formulario">
+                        <p></p>
+                    </div>
+                </form>
+                <h2>Tela de login responsiva</h2>
+                <p><a href="pages/login.html">Tela de login</a> responsiva usando os conceitos de Mobile First e media query</p>
+                        </article>
+                    </main>
+                    <footer class="noprint">
+                        <p><a href="#">Luisinho</a></p>
+                    </footer>
+            </div>
     <script>
         function changemenu(){
-            if (itens.style.display == 'block'){
+            if (itens.style.display == 'flex'){
                 itens.style.display = 'none'
             }else{
-                itens.style.display = 'block'
+                itens.style.display = 'flex'
             }
         
 
         }
         function sizechange(){
             if (window.innerWidth>=768){
-                itens.style.display = 'block'
-
+                itens.style.display = 'flex'
             }else{
                 itens.style.display = 'none'
             }

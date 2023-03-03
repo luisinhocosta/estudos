@@ -1,20 +1,42 @@
-@media screen and (min-width: 768px){
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
+@media screen and (min-width: 768px) {
     
+    main{
+        max-width: 800px;
+        font-size: 1.1em;
+    }
+    img{
+        max-width: 600px;
+    }
+    .bc{
+        height: 200px;
+    }
     #menub{
         display: none;
     }
+    .flex{
+        display: flex;
+        
+        margin: 0px;
+        
+        padding: 0px;
+    }
     nav{
-        display: block ;
+        display: block;
+        margin: 0px;
+        padding: 0px;
     }
-    nav li{
+    NAV LI{
         display: inline-block;
+        text-align: start;
+        transform: translateX(-70px);
     }
-    
+@media screen and (min-width: 1200px){
     main{
-        max-width: 800px;}
+        font-size: 1.2em;
+        max-width: 850px;
     }
-   
+    img{
+        max-width: 800px
+    };
+    
+}
