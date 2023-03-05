@@ -1,5 +1,7 @@
 @media screen and (min-width: 768px) {
-    
+    HEADER{
+        min-width: 100%;
+    }
     main{
         max-width: 800px;
         font-size: 1.1em;
@@ -31,6 +33,7 @@
     }
 }
 @media screen and (min-width: 1200px){
+    
     main{
         font-size: 1.2em;
         max-width: 850px;
