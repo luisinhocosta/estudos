@@ -8,7 +8,7 @@
         max-width: 600px;
     }
     .bc{
-        height: 200px;
+        height: 230px;
     }
     #menub{
         display: none;
@@ -23,20 +23,19 @@
     nav{
         display: block;
         margin: 0px;
-        padding: 0px;
-    }
+        padding: 0px;}
     NAV LI{
         display: inline-block;
         text-align: start;
         transform: translateX(-70px);
     }
+}
 @media screen and (min-width: 1200px){
     main{
         font-size: 1.2em;
         max-width: 850px;
     }
     img{
-        max-width: 800px
-    };
-    
+        max-width: 800px;
+    }
 }
